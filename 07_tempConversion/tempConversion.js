@@ -1,9 +1,25 @@
-const ftoc = function() {
-
+const ftoc = function(temp) {
+  let n = (temp - 32)/1.8;
+  if (Number.isInteger(n)) {
+    let newTemp = n;
+    return newTemp;
+  }
+  else {
+    let newTemp = n.toFixed(1);
+    return newTemp;
+  } 
 };
 
-const ctof = function() {
-
+const ctof = function(temp) {
+  let n = (temp * 1.8) + 32;
+  if (Number.isInteger(n)) {
+    let newTemp = n;
+    return newTemp;
+  }
+  else {
+    let newTemp = n.toFixed(1);
+    return newTemp;
+  } 
 };
 
 // Do not edit below this line
