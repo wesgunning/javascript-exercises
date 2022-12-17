@@ -6,7 +6,7 @@ const ftoc = function(temp) {
   }
   else {
     let newTemp = n.toFixed(1);
-    return newTemp;
+    return parseFloat(newTemp);
   } 
 };
 
@@ -18,7 +18,7 @@ const ctof = function(temp) {
   }
   else {
     let newTemp = n.toFixed(1);
-    return newTemp;
+    return parseFloat(newTemp);
   } 
 };
 
